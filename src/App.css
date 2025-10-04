@@ -1113,72 +1113,113 @@ About Us
 */
 
 .about-us {
-  padding-top: 130px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 60px;
+  padding: 130px 0;
   position: relative;
 }
 
-.about-us .section-heading {
-  margin-bottom: 45px;
+.about-us .content {
+  flex: 1 1 50%;
+  max-width: 50%;
 }
 
-.about-us .section-heading,
-.about-us .box-item,
-.about-us p,
-.about-us .box-item .gradient-button,
-.about-us .box-item span {
+.about-us .right-image {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.about-us .right-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
   position: relative;
   z-index: 1;
 }
 
+
+.about-us .section-heading h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2a2a2a;
+}
+
+.about-us .section-heading h2 span {
+  color: #4b8ef1;
+}
+
+.about-us p {
+  color: #7a7a7a;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.about-us .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+}
+
 .about-us .box-item {
+  flex: 1 1 calc(50% - 30px);
   box-shadow: 0px 0px 15px rgba(0,0,0,0.07);
-  padding: 10px 30px;
+  padding: 15px 30px;
   background-color: #fff;
   border-radius: 40px;
-  margin-bottom: 30px;
+  transition: all 0.3s ease;
 }
 
-.about-us .box-item h4 a {
-  font-size: 20px;
+.about-us .box-item h4 {
+  font-size: 18px;
   font-weight: 700;
-  margin-top: 8px;
   color: #2a2a2a;
-  transition: all .3s;
+  margin-bottom: 8px;
 }
 
-.about-us .box-item p {
-  margin-bottom: 0px;
-}
-
-.about-us .box-item:hover h4 a {
+.about-us .box-item:hover h4 {
   color: #4b8ef1;
 }
 
 .about-us .gradient-button {
+  display: inline-block;
+  background: linear-gradient(90deg, #4b8ef1 0%, #34d1ff 100%);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 40px;
+  padding: 12px 30px;
   margin-top: 30px;
-  margin-bottom: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.about-us .gradient-button:hover {
+  opacity: 0.85;
 }
 
 .about-us span {
-  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
   color: #7a7a7a;
 }
 
-.about-us .right-image {
-  position: relative;
-  z-index: 1;
-}
-
-.about-us:after {
-  background-image: url(/vendor/images/about-bg.jpg);
-  width: 777px;
-  height: 1132px;
+.about-us::after {
   content: '';
   position: absolute;
-  background-repeat: no-repeat;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  background-image: url('/vendor/images/about-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 777px;
+  height: 1132px;
   z-index: 0;
 }
 

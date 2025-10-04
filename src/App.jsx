@@ -332,73 +332,57 @@ function App() {
       </div>
     </div>
   </div>
-  <div id="about" className="about-us section">
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-6 align-self-center">
-          <div className="section-heading">
-            <h4>
-              About <em>What We Do</em> &amp; Who We Are
-            </h4>
-            <img src="/vendor/images/heading-line-dec.png" alt="" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eismod tempor incididunt ut labore et dolore magna.
-            </p>
+
+  <section className="about-us">
+      <div className="content">
+        <div className="section-heading">
+          <h2>
+            About What We Do & Who We Are
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
+          </p>
+        </div>
+
+        <div className="box-container">
+          <div className="box-item">
+            <h4>Maintenance Problems</h4>
+            <p>Lorem Ipsum Text</p>
           </div>
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="box-item">
-                <h4>
-                  <a href="#">Maintance Problems</a>
-                </h4>
-                <p>Lorem Ipsum Text</p>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="box-item">
-                <h4>
-                  <a href="#">24/7 Support &amp; Help</a>
-                </h4>
-                <p>Lorem Ipsum Text</p>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="box-item">
-                <h4>
-                  <a href="#">Fixing Issues About</a>
-                </h4>
-                <p>Lorem Ipsum Text</p>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="box-item">
-                <h4>
-                  <a href="#">Co. Development</a>
-                </h4>
-                <p>Lorem Ipsum Text</p>
-              </div>
-            </div>
-            <div className="col-lg-12">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eismod tempor idunte ut labore et dolore adipiscing magna.
-              </p>
-              <div className="gradient-button">
-                <a href="#">Start 14-Day Free Trial</a>
-              </div>
-              <span>*No Credit Card Required</span>
-            </div>
+          <div className="box-item">
+            <h4>24/7 Support & Help</h4>
+            <p>Lorem Ipsum Text</p>
+          </div>
+          <div className="box-item">
+            <h4>Fixing Issues About</h4>
+            <p>Lorem Ipsum Text</p>
+          </div>
+          <div className="box-item">
+            <h4>Co. Development</h4>
+            <p>Lorem Ipsum Text</p>
           </div>
         </div>
-        <div className="col-lg-6">
-          <div className="right-image">
-            <img src="/vendor/images/about-right-dec.png" alt="" />
-          </div>
-        </div>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor idunte ut labore et dolore adipiscing magna.
+        </p>
+
+        <a href="#" className="gradient-button">
+          Start 14-Day Free Trial
+        </a>
+        <span>*No Credit Card Required</span>
       </div>
-    </div>
-  </div>
+
+       <div className="right-image">
+        <img
+          src="/vendor/images/about-right-dec.png"
+          alt="About Section Illustration"
+        />
+      </div>
+    </section>
+
   <div id="clients" className="the-clients">
     <div className="container">
       <div className="row">
