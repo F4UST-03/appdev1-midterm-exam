@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>appdev1-midterm-exam</title>
+    <script type="module" crossorigin src="/appdev1-midterm-exam/assets/index-DAppDkAw.js"></script>
+    <link rel="stylesheet" crossorigin href="/appdev1-midterm-exam/assets/index-Bt2IFqL-.css">
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script src="/appdev1-midterm-exam/vendor/jquery/jquery.min.js"></script>
+    <script src="/appdev1-midterm-exam/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/appdev1-midterm-exam/vendor/js/owl-carousel.js"></script>
+    <script src="/appdev1-midterm-exam/vendor/js/animation.js"></script>
+    <script src="/appdev1-midterm-exam/vendor/js/imagesloaded.js"></script>
+    <script src="/appdev1-midterm-exam/vendor/js/popup.js"></script>
+    <script src="/appdev1-midterm-exam/vendor/js/custom.js"></script>
+    <!-- Vanilla JS fallback to ensure preloader hides even if jQuery scripts fail -->
+    <script>
+      window.addEventListener('load', function () {
+        try {
+          var p = document.getElementById('js-preloader');
+          if (p && !p.classList.contains('loaded')) p.classList.add('loaded');
+        } catch (e) {
+          /* safe noop */
+        }
+      });
+    </script>
+  </body>
+</html>
