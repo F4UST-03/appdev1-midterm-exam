@@ -1232,147 +1232,148 @@ The Clients
 */
 
 .the-clients {
-  margin-top: 130px;
+  margin-top: 120px;
+  font-family: "Poppins", sans-serif;
 }
 
-.the-clients  .section-heading {
+.the-clients .section-heading {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
-.the-clients  .section-heading p {
-  margin-top: 10px;
-  margin-left: 18%;
-  margin-right: 18%;
-}
-
-.the-clients .naccs {
-  position: relative;
-}
-
-.menu .thumb h4 {
-  margin-bottom: 0px;
-  font-size: 20px;
+.the-clients .section-heading h2 {
+  font-size: 28px;
+  font-weight: 700;
   color: #2a2a2a;
 }
 
-.menu .thumb span.date {
-  display: inline-block;
-  margin-top: 0px;
-  color: #afafaf;
-}
-
-.menu .thumb span.category,
-.menu .thumb span.rating {
-  font-weight: 700;
-  color: #afafaf;
-}
-
-.menu .thumb i {
-  color: #afafaf;
-}
-
-.the-clients .naccs .menu div {
-  color: #fff;
-  font-size: 15px;
-  margin-bottom: 15px;
-  margin-top: 15px;
-  text-align: left;
-  padding: 0px 15px;
-  cursor: pointer;
-  position: relative;
-  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.the-clients .naccs .menu div.active h4,
-.the-clients .naccs .menu div.active i,
-.the-clients .naccs .menu div.active span.rating,
-.the-clients .naccs .menu div.active .thumb {
+.the-clients .section-heading h2 span {
   color: #4b8ef1;
 }
 
-.the-clients ul.nacc {
-  position: relative;
-  min-height: 100%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+.the-clients .section-heading p {
+  margin-top: 15px;
+  color: #8a8a8a;
+  font-size: 15px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
-.the-clients ul.nacc li {
-  opacity: 0;
-  transform: translateX(-50px);
-  position: absolute;
-  list-style: none;
-  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+/* Main Layout */
+.the-clients .naccs {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-.the-clients ul.nacc li.active {
-  transition-delay: 0.3s;
-  position: relative;
-  z-index: 2;
-  opacity: 1;
-  transform: translateX(0px);
+/* Left side list */
+.the-clients .menu {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
 }
 
-.the-clients ul.nacc li {
-  width: 100%;
+.the-clients .menu .thumb {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-left: 3px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.the-clients .nacc .thumb .client-content img {
-  width: 76px;
-  height: 62px;
+.the-clients .menu .thumb:hover,
+.the-clients .menu .thumb.active {
+  background-color: #f5f9ff;
+  border-left-color: #4b8ef1;
 }
 
-.the-clients .nacc .thumb .client-content {
-  padding: 60px 30px;
-  background-image: url(/vendor/images/client-bg.png);
-  background-size: cover;
-  border-radius: 50px;
-  width: 100%;
-  height: auto;
-  background-repeat: no-repeat;
-}
-
-.the-clients .nacc .thumb .client-content p {
-  color: #fff;
-  font-weight: 500;
-  font-size: 16px;
-  font-style: italic;
-  margin-top: 30px;
-}
-
-.the-clients .nacc .thumb .down-content {
-  margin-top: 30px;
-}
-
-.the-clients .nacc .thumb .down-content img {
-  width: 170px;
-  height: 170px;
-  border-radius: 50%;
-  display: inline;
-}
-
-.the-clients .nacc .thumb .down-content .right-content {
-  display: inline-block;
-  margin-left: 20px;
-}
-
-.the-clients .nacc .thumb .down-content .right-content h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.the-clients .nacc .thumb .down-content .right-content span {
+.the-clients .menu .thumb h4 {
+  font-size: 15px;
+  font-weight: 600;
   color: #2a2a2a;
+  margin-bottom: 4px;
+}
+
+.the-clients .menu .thumb span.date {
+  display: block;
+  font-size: 13px;
+  color: #afafaf;
+  margin-bottom: 3px;
+}
+
+.the-clients .menu .thumb span.category {
+  font-size: 14px;
+  font-weight: 500;
+  color: #7a7a7a;
+}
+
+.the-clients .menu .thumb span.rating {
+  float: right;
+  color: #4b8ef1;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Right content box */
+.the-clients .right-side {
+  flex: 1.5;
+  min-width: 400px;
+  background: linear-gradient(135deg, #4b8ef1, #34d2eb);
+  border-radius: 30px;
+  padding: 60px 50px;
+  position: relative;
+  color: #fff;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Testimonial text */
+.the-clients .right-side p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+
+/* Client info at bottom */
+.the-clients .right-side .down-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.the-clients .right-side .down-content img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.the-clients .right-side .down-content .right-content h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.the-clients .right-side .down-content .right-content span {
+  font-size: 14px;
+  opacity: 0.9;
 }
 
 
 /* 
 ---------------------------------------------
-The Clients
+Pricing Tables
 ---------------------------------------------
 */
 
